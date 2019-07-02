@@ -1,3 +1,8 @@
+mod game;
+mod board;
+use game::Game;
+
 fn main() {
-    println!("Hello, world!");
+    let mut game = Game::new();
+    game.play();
 }
