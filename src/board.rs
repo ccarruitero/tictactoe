@@ -24,6 +24,10 @@ impl Board {
             cells: cells
         }
     }
+
+    pub fn find_by_position(&self, n: u32) -> <Result(_, Err)> {
+        let cell = self.cells.into_iter().filter(|&x| x.position == n)
+    }
 }
 
 #[test]
